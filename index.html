@@ -7,39 +7,42 @@
     <title>Compliment Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Compliment AI Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Compliment AI Generator</h1>
+      </header>
 
-    <main>
-      <form action="">
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Example: Happy, sad, moody..."
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <div id="">AI's output will appear here</div>
-      </form>
-    </main>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Example: Happy, sad, moody..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div id="" class="compliment">AI's output will appear here</div>
+      </main>
 
-    <footer>
-      This AI project was coded by Laia and is
-      <a
-        href="https://github.com/lpb1602/compliment-generator.git"
-        target="_blank"
-      >
-        open-sourced</a
-      >
-      and is hosted in
-      <a href="https://ai-compliment-generator.netlify.app" target="_blank"
-        >Netlify.</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by Laia and is
+        <a
+          href="https://github.com/lpb1602/compliment-generator.git"
+          target="_blank"
+        >
+          open-sourced</a
+        >
+        and is hosted in
+        <a href="https://ai-compliment-generator.netlify.app" target="_blank"
+          >Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
