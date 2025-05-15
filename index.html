@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Compliment Generator</title>
   </head>
@@ -12,14 +13,13 @@
       <header>
         <h1>Compliment AI Generator</h1>
       </header>
-
       <main>
         <form id="compliment-generator">
           <input
             type="text"
             name=""
-            id=""
-            placeholder="Example: Happy, sad, moody..."
+            id="user-instructions"
+            placeholder="Example: Excited, hopeful, frustrated..."
             autofocus
             required
             autocomplete="off"
