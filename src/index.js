@@ -15,6 +15,10 @@ function generateCompliment(event) {
     "You are a friendly AI assistant. Your mission is to generate a short compliment based on the users mood. Truncate text if needed. Sign your compliment with '- SheCodes AI' in a <strong> element after a <br> element";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${key}`;
 
+  let complimentElement = document.querySelector("#compliment");
+  complimentElement.classList.remove("hidden");
+  complimentElement.innerHTML = "Generating your compliment... ✨";
+
   axios.get(apiURL).then(displayCompliment);
 }
 

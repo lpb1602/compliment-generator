@@ -14,20 +14,24 @@
         <h1>Compliment AI Generator</h1>
       </header>
       <main>
-        <form id="compliment-generator">
-          <input
-            type="text"
-            name=""
-            id="user-instructions"
-            placeholder="Example: Excited, hopeful, frustrated..."
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div id="compliment" class="compliment"></div>
+        <div class="form-question">
+          <h3>How are you feeling today?</h3>
+          <p>Type below your mood to receive your compliment ⬇️</p>
+          <form id="compliment-generator">
+            <input
+              type="text"
+              name=""
+              id="user-instructions"
+              placeholder="i.e: Excited, hopeful, frustrated..."
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+        </div>
+        <div id="compliment" class="compliment hidden"></div>
       </main>
 
       <footer>
